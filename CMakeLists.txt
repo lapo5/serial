@@ -25,7 +25,6 @@ set(serial_SRCS
 list(APPEND serial_SRCS src/impl/unix.cc)
 list(APPEND serial_SRCS src/impl/list_ports/list_ports_linux.cc)
 
-
 ## Add serial library
 add_library(${PROJECT_NAME} ${serial_SRCS})
 
