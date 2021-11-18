@@ -49,14 +49,10 @@ ament_export_libraries(${PROJECT_NAME})
 #add_executable(${PROJECT_NAME} src/serial.cc)
 ## Install headers
 install(
-        DIRECTORY include/serial
-        DESTINATION include)
+    DIRECTORY include/serial
+    DESTINATION include
+)
 
-
-## Tests
-#if(BUILD_TESTING)
-#    add_subdirectory(tests)
-#endif()
 
 ament_export_dependencies(rosidl_default_runtime)
 ament_package()
